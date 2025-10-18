@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+  <body class="min-h-screen flex justify-center items-center bg-gray-100  ">
+  <div id="bg-container" class="w-full max-w-lg p-8 bg-blue-950 rounded shadow-lg">
+    <div id="content">
+      <form class="space-y-4 text-xl" id="form" onsubmit="return false;">
+        <fieldset>
+          <h1 id="h1" class="text-2xl m-center font-bold text-center   ">Welcome</h1>
+
+          <label for="name" class="block">
+            Name:
+            <input type="text" id="name" placeholder="Enter your name here!"
+              class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+          </label>
+          <label for="father-name" class="block">
+            Father Name:
+            <input type="text" id="father-name" placeholder="Enter your father name here!"
+              class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+          </label>
+          <br /> <br />
+          <label for="email"  class="block">
+            Email:
+            <input type="email" id="email" placeholder="Enter your email here!"
+              class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+          </label>
+          <label for="password" class="block">
+            Password:
+            <input type="password" id="password" placeholder="Enter your password here!"
+              class="mt‑1 block w-full border border-gray-300 rounded px-3 py-2" />
+          </label>
+          <br /> <br />
+          <div class="text-xl">
+            <span class="block mb‑1">Gender:</span>
+            <label class="inline-flex items-center mr-4">
+              <input type="radio" id="male" name="gender" value="male" class="mr-2"/> Male
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" id="female" name="gender" value="female" class="mr-2"/> Female
+            </label>
+          </div>
+          <br /> <br />
+          <label class="inline-flex items-center text-xl">
+            <input type="checkbox" id="privacy-policy" name="privacy‑policy" value="privacy‑policy" class="mr-2" />
+            I agree with terms and conditions...
+          </label>
+          <br /> <br />
+          <div id="controls" class="flex gap-4 justify-center mt-6">
+            <button type="button" onClick="signUp()"
+                    class="bg-green-600 text-black px-4 py-2 rounded hover:bg-green-700">
+              Sign Up
+            </button>
+            <button type="button" onClick="signIn()"
+                    class="bg-blue-600 text-black px-4 py-2 rounded hover:bg-blue-700">
+              Sign In
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+<script src="https://www.gstatic.com/firebasejs/12.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.4.0/firebase-auth-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyBgRfZKfBuXhoEfU2kZgGYYd2boe_9ReIw",
+  authDomain: "hkskeleton.firebaseapp.com",
+  projectId: "hkskeleton",
+  storageBucket: "hkskeleton.firebasestorage.app",
+  messagingSenderId: "791196073209",
+  appId: "1:791196073209:web:e54b2d495831f170977628",
+  measurementId: "G-X0M5RCWNKH"
+};
+firebase.initializeApp(firebaseConfig);
+</script>
+
+  <script src="./script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="min-h-screen flex justify-center items-center bg-gray-100">
+  <div id="bg-container" class="w-full max-w-lg p-8 bg-blue-950 rounded shadow-lg">
+    <div id="content">
+      <form class="space-y-4 text-xl" id="form" onsubmit="return false;">
+        <fieldset>
+          <h1 id="h1" class="text-2xl font-bold text-center mb-4 flex-row  items-center justify-between" style="text-align: center;">Welcome</h1>
+
+          <label for="name" class="block">
+            Name:
+            <input type="text" id="name" placeholder="Enter your name here!"
+              class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+          </label>
+
+          <label for="father-name" class="block">
+            Father Name:
+            <input type="text" id="father-name" placeholder="Enter your father name here!"
+              class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+          </label>
+          <br />
+          <label for="email" class="block">
+            Email:
+            <input type="email" id="email" placeholder="Enter your email here!"
+              class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+          </label>
+
+          <label for="password" class="block">
+            Password:
+            <input type="password" id="password" placeholder="Enter your password here!"
+              class="mt-1 block w-full border border-gray-300 rounded px-3 py-2" />
+          </label>
+
+          <div class="text-xl mt-4">
+            <span class="block mb-1">Gender:</span>
+            <label class="inline-flex items-center mr-4">
+              <input type="radio" id="male" name="gender" value="male" class="mr-2" /> Male
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" id="female" name="gender" value="female" class="mr-2" /> Female
+            </label>
+          </div>
+
+          <label class="inline-flex items-center text-xl mt-4">
+            <input type="checkbox" id="privacy-policy" name="privacy-policy" class="mr-2" />
+            I agree with terms and conditions...
+          </label>
+
+          <div id="controls" class="flex gap-12 justify-around mt-6">
+          <button type="button" onClick="signUp()" class="test-button">
+            Log In
+          </button>
+          <button type="button" onClick="signIn()" class="test-button " >
+          Sign In
+        </button>
+      </div>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/12.4.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.4.0/firebase-auth-compat.js"></script>
+
+  <!-- Firebase Config -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBgRfZKfBuXhoEfU2kZgGYYd2boe_9ReIw",
+      authDomain: "hkskeleton.firebaseapp.com",
+      projectId: "hkskeleton",
+      storageBucket: "hkskeleton.firebasestorage.app",
+      messagingSenderId: "791196073209",
+      appId: "1:791196073209:web:e54b2d495831f170977628",
+      measurementId: "G-X0M5RCWNKH"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- Your Script -->
+  <script src="./script.js"></script>
+</body>
+</html>
